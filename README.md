@@ -90,3 +90,57 @@
 3. initTimer함수 안의 setInterval()을 통해서 시간을 조절
 3-1. 종료될 경우 clearInterval() 필요
 ```
+
+## 4. down_any_file
+
+### 구현 아이디어
+
+```
+1. input에 값이 없을 경우 button의 point-event : none
+1-1. 위와 똑같이 input 에 값이 없을 경우 opacity : 0.7
+```
+
+### 주요기능
+
+- valid(css)
+
+```
+- A ~ B : A태그 옆의 B태그만 선택하는 선택자
+
+- valid : 가상선택자로 유효값을 갖는 요소 선택
+  예시) input:valid {
+          background : yellow;
+        }
+
+        input:invalid {
+          background : silver;
+        }
+```
+
+- fetch(javascript)
+
+```
+- 참고 : https://inpa.tistory.com/entry/JS-%F0%9F%93%9A-AJAX-%EC%84%9C%EB%B2%84-%EC%9A%94%EC%B2%AD-%EB%B0%8F-%EC%9D%91%EB%8B%B5-fetch-api-%EB%B0%A9%EC%8B%9D
+```
+
+## 4. notes_app
+
+### 구현 아이디어
+
+```
+1. popup의 opacity를 0으로 만듬
+2. add를 클릭하면 popup의 opacity가 1로 변하고
+2-1. x를 클릭하면 다시 opacity 0으로 바꿈
+3-1. 종료될 경우 clearInterval() 필요
+4. addnote 버튼을 누르면 li 태그 html 추가하여 메모를 추가함
+5. delete 버튼을 누르면 해당 index를 가져와서 localStorage에서 삭제
+6. edit 버튼을 누르면 update 변수 여부에 따라 update 또는 Add 실행
+```
+
+### 주요기능
+
+- insertAdjacentHTML
+
+```
+- JS로 DOM 요소를 삽입할때 사용
+```

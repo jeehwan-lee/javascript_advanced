@@ -6,6 +6,10 @@
 
 1. save_text
 2. image_editor
+3. word_game
+4. down_any_file
+5. notes_app
+6. select_menu
 
 ---
 
@@ -123,7 +127,7 @@
 - 참고 : https://inpa.tistory.com/entry/JS-%F0%9F%93%9A-AJAX-%EC%84%9C%EB%B2%84-%EC%9A%94%EC%B2%AD-%EB%B0%8F-%EC%9D%91%EB%8B%B5-fetch-api-%EB%B0%A9%EC%8B%9D
 ```
 
-## 4. notes_app
+## 5. notes_app
 
 ### 구현 아이디어
 
@@ -143,4 +147,49 @@
 
 ```
 - JS로 DOM 요소를 삽입할때 사용
+```
+
+## 6. select_menu
+
+### 구현 아이디어
+
+```
+1. 아래 화살표를 누르면 메뉴들이 나옴
+1-1. 아래 화살표를 누르면 화살표 180도 뒤집어서 위 화살표로 바꿈
+2. 검색어와 countries를 모두 toLowerCase() 하여 소문자로 바꾼 후 비교
+3. startsWith()함수를 통해 비교하며
+3-1. 같은 값이 있을 경우 <li> 태그를 통해 반환하여 그려줌
+```
+
+### 주요기능
+
+- overflow-y : 위와 아래의 내용이 넘칠때 어떻게 할 것인지
+
+```
+overflow 의 속성은 총 4가지
+- visible : 넘치는 내용은 밖으로 흘러 넘침
+- hidden 스크롤바가 나타나지 않으며 넘치는 내용은 잘림
+- scroll 내용이 잘리며 스크롤바가 나타남
+- auto : 내용이 잘리며 필요시 스크롤바가 나타남
+```
+
+## 7. right_click_menu
+
+### 구현 아이디어
+
+```
+1. 마우스 오른쪽을 클릭하면 메뉴가 나옴
+1-1. addEventListener("contextmenu") 사용
+2. 만약 브라우저 사이즈 - menu 크기보다 큰 위치를 클릭하면 지정된 곳에 menu를 띄움
+3. 만약 브라우저 사이즈 - menu - select menu의 크기보다 큰 위치를 클릭하면 select menu는 좌측에 띄움
+```
+
+### 주요기능
+
+- contextmenu : 마우스 오른쪽클릭이 됬을때 발생하는 이벤트
+
+```
+예시) document.addEventListener("contextmenu", () => {
+       e.preventDefault();
+      })  // 마우스 오른쪽 메뉴선택을 막음
 ```

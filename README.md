@@ -226,3 +226,22 @@ overflow 의 속성은 총 4가지
 4-1. 중요한점은 json-server 에서는 id는 필수
 
 ```
+
+## 10. ajax_practice
+
+### 주요 기능
+
+```
+- ajax : 웹 페이지 전체를 리로딩하는것이 아닌 필요한 부분만 가져오는것
+- fetch : ajax API 중 하나로 비동기로 작동
+  예시)
+        fetch('html').then(callbackme);
+        console.log(1);
+        console.log(2);
+
+        // 위 결과는 1 2 callbackme함수 실행
+        1. html 파일을 가져오는 동안 아래 명령어들이 실행되고
+        2. html 파일이 다 가져와지면 callbackme 함수 실행
+
+- fetch API를 지원하지 않는 브라우저는 fetch API polyfil 사용
+```

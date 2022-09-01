@@ -10,6 +10,8 @@
 4. down_any_file
 5. notes_app
 6. select_menu
+7. right_click_menu
+8. price_range_slider
 
 ---
 
@@ -149,6 +151,14 @@
 - JS로 DOM 요소를 삽입할때 사용
 ```
 
+- json.parse() / json.stringify()
+
+```
+- parse() : json 객체를 자바스크립트 객체로 반환
+- stringify() : 자바스크립트 객체를 인자로 받아 json 객체를 반환
+
+```
+
 ## 6. select_menu
 
 ### 구현 아이디어
@@ -192,4 +202,13 @@ overflow 의 속성은 총 4가지
 예시) document.addEventListener("contextmenu", () => {
        e.preventDefault();
       })  // 마우스 오른쪽 메뉴선택을 막음
+```
+
+## 8. price_range_slider
+
+### 구현 아이디어
+
+```
+1.
+
 ```

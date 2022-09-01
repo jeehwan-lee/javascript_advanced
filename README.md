@@ -12,6 +12,7 @@
 6. select_menu
 7. right_click_menu
 8. price_range_slider
+9. json_server
 
 ---
 
@@ -210,5 +211,18 @@ overflow 의 속성은 총 4가지
 
 ```
 1.
+
+```
+
+## 9. json_server
+
+### 주요 기능
+
+```
+1. 해당 폴더 아래에 db.json 파일을 생성 후 data 작성
+2. npm install -g json-server 로 json-server 설치
+3. 해당 폴더로 이동하여 json-server --watch db.json 으로 json server 실행
+4. json generator 에서 dummy data를 생성하여 사용할 수 있음
+4-1. 중요한점은 json-server 에서는 id는 필수
 
 ```
